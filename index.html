@@ -1,13 +1,29 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contador</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="bg-slate-950 flex justify-center items-center h-screen flex-col">
+  <div
+    class="bg-blue-950  h-96 w-80 rounded-2xl flex items-center flex-col justify-center gap-5 shadow-xl shadow-blue-900/30">
+    <h1 id="contar" class="text-white text-6xl w-20 h-20 flex justify-center items-center rounded">0
+    </h1>
+    <div class="flex gap-2">
+      <button id="suma"
+        class="p-2 bg-[#F0F0F0] text-[#213555] rounded duration-100 hover:bg-[#213555] hover:text-[#F0F0F0]">Sumar</button>
+      <button id="restablecer"
+        class="p-2 bg-[#F0F0F0] text-[#213555] rounded duration-100 hover:bg-[#213555] hover:text-[#F0F0F0]">Restablecer</button>
+      <button id="restar"
+        class="p-2 bg-[#F0F0F0] text-[#213555] rounded duration-100 hover:bg-[#213555] hover:text-[#F0F0F0]">Restar</button>
+    </div>
+  </div>
+  <script src="./main.js" type="module"></script>
+</body>
+
 </html>
